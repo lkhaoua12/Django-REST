@@ -1,1 +1,1 @@
-# A simple REAST Api built on the django rest framework
+# A simple REST Api built on the django rest framework
