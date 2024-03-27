@@ -27,7 +27,7 @@ To get started with the project, follow these steps:
 3. Navigate to the project directory:
 
     ```bash
-    cd Django-REST/dev
+    cd dev
     ```
 
 4. Install the project dependencies:
