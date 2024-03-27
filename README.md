@@ -33,7 +33,7 @@ To get started with the project, follow these steps:
 4. Install the project dependencies:
 
     ```bash
-    pip install -r requirement.txt
+    pip install -r requirements.txt
     ```
 
 5. Navigate to the backend directory:
