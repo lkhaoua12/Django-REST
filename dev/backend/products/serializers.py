@@ -14,4 +14,12 @@ class ProductSerializer(serializers.ModelSerializer):
     def get_url(self, obj):
         request = self.context.get('request')
         return reverse('products-detail', kwargs={'pk': obj.id}, request=request)
+    
+    def validate_title(self, value):
+        if len(value) > 100:
+            raise serializers.ValidationError('This is way too long')
+        qs = Product.objects.filter(title__exact=value)
+        if qs:
+            raise serializers.ValidationError('title already exist in the database')
+        return value
 
