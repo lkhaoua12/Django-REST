@@ -14,6 +14,7 @@ To get started with the project, follow these steps:
 
     ```bash
     git clone https://github.com/lkhaoua12/Django-REST.git
+    cd Django-REST
     ```
 
 2. Create a new virtual environment and activate it:
