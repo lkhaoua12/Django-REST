@@ -1,6 +1,7 @@
 from rest_framework import generics
 from products.models import Product
 from products.serializers import ProductSerializer
+from products.pagination import StandardResultsSetPagination
 
 
 class ProductDetailView(generics.RetrieveAPIView):
@@ -17,6 +18,7 @@ class ProductListCreateView(generics.ListCreateAPIView):
     """
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    pagination_class = StandardResultsSetPagination
 
     def perform_create(self, serializer):
         """
